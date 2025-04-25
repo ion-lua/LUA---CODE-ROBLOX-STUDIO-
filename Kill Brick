@@ -1,3 +1,6 @@
+**MADE BY ION -- YOU CAN DELETE**
+**PUT THIS IN A PART THAT YOU WANT TO KILL**
+
 local part = script.Parent
 
 part.Touched:Connect(function(hit)
