@@ -1,0 +1,17 @@
+--MADE BY ION--
+--PUT THIS SCRIPT IN SERVER SCRIPT SERVICE--
+
+local Lighting = game:GetService("Lighting")
+local startTime = 12 -- Start at 12 PM
+local speed = 2 -- Lower = faster cycle
+
+local function dayNightCycle()
+	while true do
+		for i = 0, 1, 0.001 do
+			Lighting.ClockTime = startTime + (i * 24) % 24
+			wait(speed / 1000)
+		end
+	end
+end
+
+dayNightCycle()
